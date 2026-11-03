@@ -1,0 +1,15 @@
+2026-11-02 10:00:08-root-DEBUG-this is debug
+2026-11-02 10:00:08-root-WARNING-wrning
+2026-11-02 10:00:08-root-ERROR-errpr
+2026-11-02 10:00:08-root-INFO-info
+2026-11-02 10:00:08-root-CRITICAL-critical
+2026-11-02 10:01:48-root-DEBUG-this is debug
+2026-11-02 10:01:48-root-WARNING-wrning
+2026-11-02 10:01:48-root-ERROR-errpr
+2026-11-02 10:01:48-root-INFO-info
+2026-11-02 10:01:48-root-CRITICAL-critical
+2026-11-02 10:03:46-root-DEBUG-this is debug
+2026-11-02 10:03:46-root-WARNING-wrning
+2026-11-02 10:03:46-root-ERROR-errpr
+2026-11-02 10:03:46-root-INFO-info
+2026-11-02 10:03:46-root-CRITICAL-critical

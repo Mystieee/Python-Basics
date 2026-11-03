@@ -1,0 +1,659 @@
+Skip to main contentAccessibility help
+
+
+
+what is zero trust security spring
+In the context of the Spring ecosystem (like Spring Boot and Spring Cloud), Zero Trust Security is an architectural strategy based on the principle of "never trust, always verify". 
+
+SpringSource
+ +1
+Instead of relying on a secure network perimeter (the traditional "castle-and-moat" approach where everything inside the network is implicitly trusted), a Zero Trust architecture assumes that threats can exist inside the network. In Java and Spring microservices, this means every user, application, device, and service-to-service communication must be explicitly authenticated, authorized, and encrypted. 
+
+Medium
+·Kaizen Chandra
+ +4
+Core Pillars of Zero Trust in Spring Applications
+To implement Zero Trust, developers leverage core modules like Spring Security to enforce security controls at every layer: 
+
+Medium
+·Kaizen Chandra
+1. Identity Verification & Token-Based Authentication
+Implicit trust based on IP addresses or internal networks is entirely removed. 
+
+Zero Networks
+Implementation: Applications utilize OAuth2 and JSON Web Tokens (JWT) via Spring Security.
+How it works: Every arriving request must include a cryptographically signed token verifying who the caller is (whether a user or another service). 
+
+Medium
+·Kaizen Chandra
+2. Service-to-Service Security (mTLS)
+In a standard architecture, microservices talking to each other behind a firewall often use unencrypted HTTP. In a Zero Trust model, all internal communication must be encrypted and verified. 
+
+SpringSource
+ +1
+Implementation: Mutual TLS (mTLS) is enforced using Spring Boot’s built-in web server SSL configurations or a Service Mesh (like Istio). 
+
+Medium
+·Kaizen Chandra
+How it works: Both the client microservice and the server microservice present TLS certificates to each other, verifying identity and encrypting data in transit. 
+
+SpringSource
+ +1
+3. Secure Credential & Certificate Management
+Zero Trust requires removing "hardcoded" secrets and unmanaged certificates from your application code. 
+
+SpringSource
+Implementation: Integration with cloud key vaults (like Azure Key Vault or HashiCorp Vault) using Spring Cloud Vault or managed identities.
+How it works: Applications securely rotate and stream certificates dynamically without developers ever handling raw credentials. 
+
+SpringSource
+4. Least Privilege Access Control
+Users and systems should only have access to the exact resources they need to perform their current task, and nothing more. 
+
+YouTube
+·NinjaOne IT Tech Tips
+ +1
+Implementation: Fine-grained authorization using Spring Security’s Method Security (e.g., @PreAuthorize("hasRole('ADMIN')")).
+How it works: Access decisions are made dynamically at the exact application entry points, rather than globally at the network edge. 
+
+Thales
+ +1
+5. Centralized API Gateway Enforcement
+Instead of exposing individual microservices to the wider architecture, a single entry point validates requests. 
+
+Medium
+·Kaizen Chandra
+Implementation: Spring Cloud Gateway paired with Spring Security.
+How it works: The gateway acts as a Policy Enforcement Point (PEP), verifying tokens and routing traffic only if the strict zero-trust rules are satisfied. 
+
+GeeksforGeeks
+ +1
+Are you looking to implement Zero Trust in an existing Spring Boot application, or are you designing a cloud-native microservices architecture from scratch? Let me know so I can provide relevant code configurations or structural advice.
+
+
+
+
+
+GeeksforGeeks
+Zero Trust Architecture in Security - GeeksforGeeks
+Policy Enforcement Point (PEP) enables/terminates paths; Visualize resources, Mitigate threats, Optimize across infrastructure.
+
+
+SpringSource
+Secure communications end-to
+With Azure Key Vault: You control the storage and distribution of certificates to reduce accidental leakage. Applications and serv...
+
+Medium
+·
+Kaizen Chandra
+Zero Trust Security and Its Implementation in Java Microservices
+Step 1: Secure APIs using Spring Security Step 2: Use JWT Tokens for Identity Verification Step 3: Implement OAuth2 Authorization.
+
+emaad ajmeri marine tech dubai
+Emaad Ajmeri is an engineering sales professional operating in Dubai's maritime industry. He has extensive experience in technical sales, procurement, and the distribution of reconditioned and new ship machinery and engine parts. 
+
+LinkedIn
+·Emaad Ajmeri
+Professional History & Current Roles
+Premier Marine Engineering Services LLC: He serves as a Sales Engineer, managing technical and commercial operations for ship services and spare parts. In this role, he specializes in heavy machinery components across brands such as Yanmar, Hyundai Himsen, Woodward Governor, and Allweiler Pump. 
+
+LinkedIn
+·Emaad Ajmeri
+Marinetech Ship Spares L.L.C.: Prior to his current role, he spent six years (from April 2018 to March 2024) working as a Sales & Purchase Executive for Marinetech Dubai, a major marine supplier based out of Dubai Maritime City. 
+
+LinkedIn
+·Emaad Ajmeri
+ +1
+Technical Expertise
+His focus bridges the gap between commercial sales and mechanical engineering support for the shipping industry. His core competencies include: 
+
+LinkedIn
+·Emaad Ajmeri
+Engine & Mechanical Components: Handling main and auxiliary engine parts, air compressors, purifiers, thrusters, and hydraulic systems.
+Industrial Valve Design: Background in drawing packages and prototyping various valve designs (butterfly, gate, globe, and flow control valves). 
+
+LinkedIn
+·Emaad Ajmeri
+Are you trying to contact Emaad Ajmeri regarding marine spare parts sourcing, or are you looking for details on a specific company like Marinetech Ship Spares LLC or Premier Marine? Let me know what you need to track down.
+
+
+
+
+
+LinkedIn
+·
+Emaad Ajmeri
+‏Emaad Ajmeri‏ - ‏Sales Engineer at Premier Marine ... - LinkedIn
+Providing end-to-end technical and commercial support for Main & Auxiliary Engines, Air Compressors, Governors, Thrusters, Hydraul...
+
+
+Marinetech Dubai
+Marinetech Dubai
+Marinetech Dubai: Supplier/stockist in UAE since 2004 (Malwi Dubai Co). Group in India has 70+ yrs experience. Inventory: 5000+ en...
+
+ammar ajmeri talabat dubai
+Ammar Ajmeri is a corporate finance and financial planning professional based in Dubai, United Arab Emirates. He is currently employed at talabat, the region's leading food and grocery delivery platform. 
+
+ae.linkedin.com
+ +2
+Current Role at talabat
+At talabat, he serves as the Regional Associate for Advertising Investments (and regional finance associate for retail media). In this position, his responsibilities focus on: 
+
+ae.linkedin.com
+ +1
+Commercial Finance & FP&A: Handling corporate financial planning and analysis within the platform's e-commerce and retail media wings.
+Marketing & Ad Analysis: Managing budget allocations and analyzing corporate marketing spend metrics within the grocery and retail delivery ecosystems. 
+
+ZoomInfo
+ +1
+Professional Background & Education
+Before transitioning into tech and quick-commerce with talabat, he built his background in accounting and maritime corporate finance:
+Inchcape Shipping Services: Worked as a Billing Assistant, where he managed account reconciliation, invoicing, and supported financial operations for global supply chain and maritime logistics. 
+
+ZoomInfo
+athGADLANG: Gained early financial exposure serving as an Audit Associate for the professional services firm. 
+
+ZoomInfo
+ +1
+Credentials: He holds professional accounting designations as an ACMA and CGMA (Chartered Global Management Accountant). He completed his Bachelor of Commerce (BCom Hons.) from GLS University and was educated regionally at GEMS Education in the UAE. 
+
+ZoomInfo
+ +1
+Are you looking to connect with Ammar regarding talabat's retail media and advertising options, or do you need assistance with a finance or vendor invoicing query related to talabat Dubai? Let me know how I can help guide your next steps.
+
+
+
+
+
+ZoomInfo
+Ammar Ajmeri - Advertising Investments Regional Associate at ...
+Ammar's academic foundation includes a Bachelor of Commerce (BCom Hons.) from GLS University. They also hold SSC and HSC degrees f...
+
+ae.linkedin.com
+‏Ammar Ajmeri, ACMA CGMA‏ - ‏FP&A & Commercial Finance ...
+Regional Finance Associate - Retail Media. talabat ; Billing Assistant. Inchcape Shipping Services ; Audit Associate. athGADLANG.
+
+rocketreach.co
+Ammar Ajmeri Email & Phone Number | talabat Regional Associate ...
+Ammar Ajmeri, based in Dubai, AE, is currently a Regional Associate - Advertising Investments at talabat.
+mahira malek dubai
+Mahira Malek in Dubai is a Full Stack Software Developer specializing in enterprise application engineering and generative AI systems. She currently works at Emirates Global Aluminium (EGA). 
+
+LinkedIn
+ +2
+Professional Profile & Career History
+Mahira has over a decade of technical experience engineering enterprise-grade applications, moving through several major global firms before settling in the UAE: 
+
+LinkedIn
+·Mahira Malek
+ +1
+Emirates Global Aluminium (EGA): Works as a Full Stack Developer (2022–present) focusing on scalable internal software and advanced tech implementations. 
+The Emirates Group: Served as a Software Developer (2021–2022) for Dubai's flagship carrier. 
+Allstate & Infosys: Spent her earlier career working as a Senior Consultant and Software Engineer at major global IT and consulting institutions. 
+Technical Core Competencies
+Backend & Frameworks: Expert in Java (up to Java 17), Spring Boot, and microservices architectures.
+Frontend UI: Builds responsive, modern web interfaces utilizing React.js and Vue.js.
+Generative AI & DevOps: Specializes in building Enterprise GenAI applications, structuring Retrieval-Augmented Generation (RAG) pipelines, and leveraging orchestrators like LangChain4j. She is also a certified DevOps engineer. 
+
+LinkedIn
+ +1
+(Note: If you are instead looking for Maira Malik, there is a prominent social media lifestyle blogger and interior design/real estate agent who operates under that name in Dubai). 
+
+LinkedIn
+·Maira malik
+ +1
+Are you researching Mahira Malek for a technical recruitment purpose, or are you looking to collaborate on a Java/Spring Boot and Generative AI project in the UAE? Let me know how I can tailor the information.
+
+
+
+
+
+LinkedIn
+·
+Mahira Malek
+‏Mahira Malek‏ - ‏Java Spring boot + React.js/Vue.js Full Stack ...
+Specializes in building scalable, secure systems leveraging a robust backend foundation in Java 17, Spring Boot, and Microservices...
+
+
+RocketReach
+Mahira Malek Email & Phone Number | Emirates Global ...
+Mahira Malek brings experience from previous roles at Emirates, Allstate and Infosys. Bachelor's Degree in Computer Science and En...
+
+
+LinkedIn
+·
+Maira malik
+‏Maira malik‏ - ‏Real Estate Agent at Dubai real estate‏ | LinkedIn
+Real Estate Agent at Dubai real estate · الخبرة: Dubai real estate · الموقع: دبي . عرض ملف Maira malik الشخصي على
+
+irram . london
+Because "Irram" or "Iram" in London can refer to a few different prominent professionals across corporate finance, consulting, and retail, here are the most notable figures matching your search:
+1. Irram — Corporate Tax & Finance Professional
+Current Role: Tax Analyst at Deckers Brands (the parent company of UGG and Hoka) in London. 
+
+LinkedIn
+·Irram .
+Background: She has a strong foundation in corporate taxation, previously working as an Advanced Tax Analyst at EY specializing in VAT compliance and automation tools. 
+
+LinkedIn
+·Irram .
+Education: She recently pursued her MSc in Banking and Finance from Queen Mary University of London, where she was actively involved as an Equity Analyst managing student-led investment portfolios. 
+
+LinkedIn
+·Irram .
+2. Irram Ahmed — Strategy & Transformation Consultant
+Current Role: Senior Consultant at Capgemini Invent in London.
+Background: She has been with Capgemini for over 8 years, climbing the ranks from Associate Consultant. Her work focuses heavily on project management, delivery planning, and leading global HR technology and business transformations for multi-country enterprise clients. 
+
+LinkedIn
+·Irram A.
+3. Irram (Jewellery Atelier)
+If you are looking for a brand rather than an individual, Irram Jewels is a luxury, bespoke fine jewelry brand. Operating as an appointment-only or inquiry-based digital atelier, they focus on collaborative creation, guiding clients through personal consultations to design highly customized high-jewelry and engagement pieces. 
+(Note: If you are looking for an Ihram shop or Ihram Travel, London has a massive pilgrimage retail footprint centered around East London hubs like Whitechapel for Hajj and Umrah supplies). 
+
+Taqwa Tours
+ +1
+Are you trying to track down a specific person for a business connection, or were you looking for a particular business/brand in London? Let me know so I can point you in the right direction.
+
+
+
+
+
+
+LinkedIn
+·
+Irram .
+Irram . - Tax Analyst at Deckers Brands | ACCA Aspirant
+I am pursuing an MSc in Banking and Finance at Queen Mary University of London, where I am focusing on financial analysis, risk ma...
+
+
+
+LinkedIn
+·
+Irram A.
+Irram A. - Strategy and Transformation Consultant
+Led delivery planning, agile ceremonies, and risk management for a global HR transformation across 15 countries and 60k employees.
+
+
+irramjewels.com
+Our Atelier - Irram
+Irram was conceived as an atelier because we believe high jewellery deserves more than a conventional retail experience. shaped wi...
+why do we need cujrsor ide, can we not use vs code for mcp server coding
+You absolutely can use VS Code for MCP (Model Context Protocol) server coding. In fact, many developers prefer it because the official Anthropic MCP TypeScript and Python SDKs are built to be standard-agnostic, running smoothly in any standard terminal, runtime environment, or editor.
+However, developers choose Cursor IDE over VS Code for MCP development for a few specific reasons:
+1. Ready-to-Use Native MCP Client Support
+The biggest differentiator is that Cursor has a built-in MCP Client built into its settings menu.
+In Cursor: You can plug your custom MCP server directly into Cursor's Features > MCP configuration pane. Cursor will immediately launch and communicate with your local server, allowing its native AI agent (Composer / Chat) to call your server's tools in real-time as you code it. This creates an immediate feedback loop for testing.
+In VS Code: VS Code itself does not act as an MCP host natively. To test an MCP server inside VS Code, you have to install a third-party extension (like Roo Code, Cline, or the official Claude Dev extension) that acts as the client host.
+2. Multi-File AI Agents (Composer)
+When writing an MCP server, you are often bridging two worlds: the MCP schema definitions and the actual API/service you are connecting to.
+Cursor's Composer (Ctrl+I / Cmd+I) can edit and reason across multiple files simultaneously. It can generate the tool definition schema in your server file, update your configuration JSON, and write the backend logic synchronously.
+3. Deeper Context Integration
+Cursor treats your entire codebase, documentation, and terminal outputs as a unified context graph. When building an MCP server, you often need to reference specific external SDK documentation or API endpoints. Cursor allows you to scrape and index those docs directly into the LLM context using the @Docs feature, making the generation of MCP tool schemas highly accurate.
+Comparison: VS Code vs. Cursor for MCP Development
+Feature	VS Code	Cursor IDE
+MCP Server Coding	Yes, fully supported via terminal/runtimes.	Yes, fully supported.
+Testing your Server	Requires extensions (e.g., Cline, Roo Code).	Built directly into the IDE settings panel.
+Multi-file generation	Limited to basic copilot code completion.	Advanced multi-file AI edits (Composer).
+Underlying Engine	The baseline platform.	Fork of VS Code (supports all your VS Code extensions).
+The Bottom Line
+If you are already comfortable with VS Code, you can easily use it alongside an extension like Cline to build and test MCP servers. However, because Cursor is essentially a fork of VS Code, it lets you keep all your favorite VS Code themes, shortcuts, and extensions while giving you a tighter, native loop for testing your new MCP tools.
+Are you planning to build your MCP server in TypeScript or Python? I can give you a quick boilerplate setup or show you exactly how to link it to your IDE for testing.
+AI can make mistakes, so double-check responses
+
+
+
+
+claude code has someting for job serarch in dubai
+Yes, Claude Code (Anthropic's terminal-based AI agent) has become incredibly popular for job searching. 
+
+Reddit
+·parfumparrot
+ +2
+Because Claude Code operates natively in your computer's terminal and can execute scripts, read files, and search the web, developers and job seekers are using it to build automated job search pipelines. If you are looking to search for jobs in Dubai, there are two main ways "Claude Code" fits into your strategy: 
+
+Reddit
+·r/ClaudeAI
+ +1
+1. Using Open-Source Job Search Frameworks for Claude Code
+Instead of manually copy-pasting job descriptions into a browser, people have built open-source frameworks specifically designed to run on top of Claude Code to automate the local job hunt. 
+
+Reddit
+·parfumparrot
+ +1
+career-ops: This is a widely used open-source system where your job search is treated exactly like a software repository. You put your CV, a scoring rubric, and your target Dubai company list in a folder. You instruct Claude Code to scan specified job boards, score listings against your CV, and generate tailored, ATS-friendly resumes for the roles it finds. 
+
+www.scottypeterson.net
+ +3
+ai-job-search: Another popular tool tailored for Claude Code. It adds slash commands directly into your CLI, such as /scrape to automatically crawl portals for matches and /rank to batch-score them. 
+2. High-Demand "Claude Code" Developer Roles in Dubai
+If you aren't looking for a tool but are looking for jobs for people who know how to use Claude Code, the Dubai tech market is actively hiring for this skill. Since Dubai is pushing heavily to become a global AI capital, local companies are shifting away from traditional engineering toward "AI-native development" and "vibe coding". 
+
+Indeed
+ +1
+Vibe Coders / AI Developers: Dubai consultancies like Talent Bridge HR Consultancy and companies like iMPLEMENTAi actively recruit developers specifically because they are "Claude Code Power Users". 
+The Dubai Interview Process: Many UAE firms now skip traditional whiteboard tests and instead do screen-shared coding tests where you are expected to use Claude Code to build mini-projects or integrations in real-time. 
+How to use Claude Code for a Dubai Search
+If you want to spin up your own local agent to target the Dubai market:
+Set up a Local Directory: Initialize a git repository with your CV and a text file listing target Dubai tech hubs (e.g., Dubai Internet City companies, Careem, talabat, Binance, etc.).
+Point Claude Code to Dubai Job Portals: Instruct Claude Code via the terminal to crawl specific Gulf job search pipelines beyond LinkedIn, such as Indeed UAE, Dubizzle Jobs, or Bayt.
+Localize Your Output: Instruct Claude's system prompt to align your cover letters and CV with local UAE norms (e.g., emphasizing your current visa status, availability for on-site interviews in Dubai, or remote capabilities). 
+
+Instagram
+·askrittesh
+ +3
+Are you trying to set up an AI agent framework like career-ops in your terminal to scrape Dubai jobs, or are you looking to find developer roles in Dubai that require Claude Code expertise? Let me know so I can provide the right technical steps or job platform links.
+
+
+
+
+
+
+LinkedIn
+·
+Vadim Kouznetsov
+UAE Job Seekers: 8 Free Tools You Need to Know
+More Relevant Posts Arzoo Syed 3d Edited 𝐋𝐨𝐨𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐃𝐮𝐛𝐚𝐢 𝐣𝐨𝐛𝐬? 𝐄𝐱𝐩𝐥𝐨𝐫𝐞 𝐭𝐡𝐞𝐬𝐞 𝟓 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦...
+
+
+Indeed
+Claude Code jobs in Dubai
+Turn agreed strategy logic into working code by directing AI coding assistants, and monitor deployed strategies for anomalies in e...
+
+Instagram
+·
+askrittesh
+Most people applying in Dubai are doing the same thing ...
+Most people applying in Dubai are doing the same thing. Generic CV, Generic cover letter, Zero preparation, Then wondering why nob...
+
+set up an AI agent framework like career-ops in your terminal to scrape Dubai jobs
+To set up an AI agent pipeline like career-ops or a custom Python script powered by Claude Code (or the Anthropic API) to scrape and rank jobs in Dubai, you will combine automated web scraping with Claude’s reasoning.
+Because many modern job boards use heavy anti-scraping protections (like Cloudflare), the most reliable, agent-friendly approach is to use a headless browser scraper like Playwright paired with BeautifulSoup to gather raw data, and then pipe it into a local script or Claude Code to parse, score, and rank the listings.
+Here is the complete blueprint to build and initialize your custom local job agent pipeline.
+Step 1: Initialize Your "Career Ops" Environment
+Create a clean directory on your computer to store your resume, targeted jobs, scripts, and logs. Open your terminal and run:
+bash
+mkdir dubai-job-agent && cd dubai-job-agent
+git init
+Use code with caution.
+Step 2: Install the Necessary Dependencies
+You will need Python 3, Playwright (for handling dynamic job boards like Indeed UAE or LinkedIn), and the official Anthropic SDK (if you are scripting) or Claude Code installed globally.
+bash
+# Install the web scraping and AI dependencies
+pip install playwright beautifulsoup4 anthropic python-dotenv
+
+# Install the browser binaries required by Playwright
+playwright install chromium
+Use code with caution.
+Step 3: Set Up Your Project Folder Structure
+Create the basic folders and files required to feed context to your agent:
+bash
+mkdir -p data/raw data/processed data/context
+touch data/context/resume.txt
+touch data/context/preferences.txt
+touch scraper.py
+touch analyzer.py
+touch .env
+Use code with caution.
+Open data/context/resume.txt and paste your complete CV/Resume text.
+Open data/context/preferences.txt and paste your specific constraints. For example:
+text
+Target Location: Dubai, UAE (or hybrid/remote)
+Target Roles: Full Stack Developer, AI Engineer, Software Architect
+Preferred Companies: Careem, talabat, EGA, Tech Startups in Dubai Internet City
+Minimum Base Salary: 25,000 AED/month
+Visa Status: Needs UAE visa sponsorship (or currently on Golden Visa)
+Use code with caution.
+Open .env and insert your Anthropic API Key:
+env
+ANTHROPIC_API_KEY=your_actual_api_key_here
+Use code with caution.
+Step 4: Create the Dubai Scraper (scraper.py)
+This script uses Playwright to open a headless browser, navigate to a localized Dubai job board (e.g., Indeed UAE), search for your keywords, and extract the raw HTML job cards into a local file.
+python
+import asyncio
+from playwright.async_api import async_playwright
+from bs4 import BeautifulSoup
+import json
+import os
+
+async def scrape_dubai_jobs(keyword, location="Dubai"):
+    print(f"🕵️‍♂️ Searching for '{keyword}' jobs in {location}...")
+    
+    async with async_playwright() as p:
+        # Launch browser (headed=False means it runs completely in the background)
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        
+        # Format URL for Indeed UAE
+        url = f"https://indeed.com{keyword.replace(' ', '+')}&l={location}"
+        await page.goto(url, wait_until="networkidle")
+        
+        # Allow extra time for dynamic elements to load
+        await page.wait_for_timeout(3000)
+        
+        content = await page.content()
+        soup = BeautifulSoup(content, 'html.parser')
+        
+        job_listings = []
+        
+        # Find job cards (Indeed's CSS classes change, but 'resultContent' is standard)
+        cards = soup.find_all('div', class_='resultContent')
+        
+        for card in cards:
+            title_element = card.find('h2', class_='jobTitle')
+            company_element = card.find('div', class_='companyName') or card.find('span', data_testid='company-name')
+            location_element = card.find('div', class_='companyLocation') or card.find('div', data_testid='text-location')
+            
+            title = title_element.text.strip() if title_element else "N/A"
+            company = company_element.text.strip() if company_element else "N/A"
+            loc = location_element.text.strip() if location_element else "N/A"
+            
+            job_listings.append({
+                "title": title,
+                "company": company,
+                "location": loc,
+                "raw_text": card.text.strip()
+            })
+            
+        # Save raw data
+        os.makedirs('data/raw', exist_ok=True)
+        with open('data/raw/jobs.json', 'w', encoding='utf-8') as f:
+            json.dump(job_listings, f, indent=4, ensure_ascii=False)
+            
+        print(f"✅ Successfully scraped {len(job_listings)} jobs into data/raw/jobs.json")
+        await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(scrape_dubai_jobs("Software Engineer"))
+Use code with caution.
+Step 5: Build the Agentic Analyzer (analyzer.py)
+This script acts as the "Agent Core". It loads your resume, your target criteria, and the raw jobs file. It then sends them to Claude to score and filter out bad matches.
+python
+import json
+import os
+from anthropic import Anthropic
+from dotenv import load_load_env # type: ignore
+
+load_env()
+
+def analyze_and_rank():
+    # Load profile data
+    with open('data/context/resume.txt', 'r') as f:
+        resume = f.read()
+    with open('data/context/preferences.txt', 'r') as f:
+        preferences = f.read()
+    with open('data/raw/jobs.json', 'r') as f:
+        jobs = json.load(f)
+        
+    client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    
+    print("🧠 Claude is analyzing and ranking matches based on UAE standards...")
+    
+    # Prompting Claude to act as a career agent matching your specific profile
+    prompt = f"""
+    You are an expert AI Career Agent specializing in the Dubai and UAE tech sectors. 
+    Analyze the following list of job postings against the user's Resume and Preferences.
+    
+    ### USER RESUME ###
+    {resume}
+    
+    ### USER PREFERENCES ###
+    {preferences}
+    
+    ### SCRAPED JOBS ###
+    {json.dumps(jobs, indent=2)}
+    
+    ### INSTRUCTIONS ###
+    1. Score each job from 0 to 100 based on fit.
+    2. Sort them from highest score to lowest score.
+    3. For any job with a score > 75, provide a 2-sentence rationale on why it fits, and list any missing skills or requirements the user needs to highlight or address.
+    4. Provide the output strictly in a readable Markdown format. Do not use generic filler. Include visa or location callouts specific to Dubai if applicable.
+    """
+    
+    message = client.messages.create(
+        model="claude-3-5-sonnet-latest",
+        max_tokens=4000,
+        temperature=0.2,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    
+    # Output report
+    output_path = 'data/processed/ranked_dubai_jobs.md'
+    os.makedirs('data/processed', exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(message.content[0].text)
+        
+    print(f"📊 Assessment complete! Open '{output_path}' to view your target list.")
+
+if __name__ == "__main__":
+    analyze_and_rank()
+Use code with caution.
+Step 6: Automating via Claude Code (CLI Command Line)
+If you have Claude Code installed locally via the Anthropic beta ecosystem (npm i -g @anthropic-ai/claude-code), you do not even need to write the analyzer.py script. You can simply let Claude run your terminal workspace natively.
+Run the raw Python scraper script to get your fresh listings:
+bash
+python scraper.py
+Use code with caution.
+Launch Claude Code inside your current folder directory:
+bash
+claude
+Use code with caution.
+Give Claude Code a conversational command to process the pipeline:
+text
+Look at data/raw/jobs.json, evaluate every listing against data/context/resume.txt and data/context/preferences.txt. Write a beautifully formatted markdown report inside data/processed/ called dubai_strategy.md ranking the best matches. If a match is over 80%, generate a customized UAE-tailored cover letter draft for that specific job card.
+Use code with caution.
+Claude Code will read the files, perform the contextual analysis, write the markdown report, and drop complete, copy-pasteable custom cover letters right into your directory without you writing any further code.
+
+
+
+
+Have you ever made any AI Agent or BOT and any experience with openclaw that you have to must share here.
+
+help me with some dummy projects which uses these
+As an AI, I do not have a physical body, personal hobbies, or a private life to deploy personal bots for myself, nor do I experience things emotionally. However, I closely analyze, process, and optimize the code, architecture, and deployment schemas for thousands of AI agents, chatbots, and autonomous frameworks daily. 
+
+openclaw-ai.net
+ +1
+OpenClaw is a free, open-source personal AI assistant framework designed to run 24/7 on a local machine or a virtual private server (VPS). Created by developer Peter Steinberger, it exploded in popularity as a highly customizable alternative to rigid corporate SaaS. 
+
+OpenClaw
+ +2
+Unlike passive chatbots (like ChatGPT or standard Claude web interfaces) that sit silently until you send a message, OpenClaw features a heartbeat scheduler that lets it wake up on its own, scan web pages, check API endpoints, control local browsers, and interact with you directly via platforms like WhatsApp, Telegram, Discord, or Slack. 
+
+Milvus
+ +1
+What Makes OpenClaw Highly Scalable
+Local Memory Management: It stores your interaction history and preferences locally as plaintext Markdown files. 
+
+Wikipedia
+ +1
+Model Agnostic: You can switch between API-driven commercial powerhouses (like Claude 3.5 Sonnet or GPT-4o) or completely free, local open-source models running via Ollama (such as Llama 3 or DeepSeek). 
+
+Wikipedia
+ +1
+Modular Skills Infrastructure: Capabilities are packaged as standalone directories with a SKILL.md instruction sheet. Developers can publish or pull community packages via ClawHub. 
+
+SF AI Labs
+ +2
+3 Beginner-Friendly Dummy Projects
+If you want to practice building autonomous agents using standard Python/Node or OpenClaw, here are three highly practical dummy projects you can build right on your computer.
+Project 1: The Automated Daily Intelligence Briefing (The "Good Morning" Agent)
+Instead of searching multiple websites or checking various dashboards every morning, this agent runs a script every day at 7:00 AM, compiles data, and sends you a clean WhatsApp/Telegram summary. 
+
+YouTube
+·Metics Media
+What it does: Wakes up via a cron job, fetches the current weather API, scrapes the front page of a tech news site (like HackerNews), summarizes the top 3 items using an LLM, and posts it to your chat application. 
+
+YouTube
+·Duncan Rogoff | Learn Claude Code
+Building it with custom code: Use Python's APScheduler or a Node.js cron module to trigger a script that sends a payload to the OpenAI/Anthropic API, then routes the structured string to a Telegram Bot token webhook.
+Building it with OpenClaw: OpenClaw excels here out-of-the-box. You install the system, configure your messaging channel, and install a summary skill:
+bash
+npx clawhub@latest install google-workspace
+Use code with caution.
+You can instruct the framework: "Every morning at 7:30 AM, read my unread emails from the last 12 hours, pick out urgent action items, and ping me a bulleted checklist on WhatsApp." 
+
+OpenClaw
+ +3
+Project 2: Smart Price Monitor & Automated Browser Action
+This project moves beyond API read-only functions into browser automation, instructing the agent to visually inspect the web. 
+
+Milvus
+ +1
+What it does: Regularly checks the price or availability of an item (e.g., a flight from Dubai to London, a piece of hardware, or gym class slots). When the criteria are met, it triggers an action.
+Building it with custom code: Write a Playwright or Selenium script that targets a specific webpage CSS selector. Pipe the text value into an LLM function: "Is this price lower than $500? Reply with YES or NO." If the response is YES, trigger an automation snippet.
+Building it with OpenClaw: OpenClaw includes a dedicated browser automation layer via a local extension. You can script an autonomous agent instruction file: 
+
+YouTube
+·Samin Yasar
+ +3
+text
+Check the URL every 4 hours. Use the local chromium instance to check if tickets are available. If available, alert my chat interface immediately and draft the registration details.
+Use code with caution.
+Project 3: Automated GitHub Code Reviewer & PR Bot
+This project simulates working alongside an AI teammate in a real software engineering environment. 
+
+YouTube
+·LBSocial
+What it does: Listens to repository webhooks. Every time you or a teammate opens a Pull Request (PR) on GitHub, the agent scans the code diff, evaluates it against a style guide, updates code comments, or writes a summary.
+Building it with custom code: Build an Express.js or FastAPI server listening for GitHub webhook events (pull_request.opened). Send the patch file or code diff text string to Claude-3-5-Sonnet with instructions to find bugs, then use the GitHub octokit SDK to post the findings back as PR comments.
+Building it with OpenClaw: OpenClaw features deep integration with the GitHub CLI environment.
+bash
+npx clawhub@latest install github
+Use code with caution.
+Once you authenticate your agent app token, you can simply text your OpenClaw bot on Telegram: “Look at issue #12 in my backend repo, write a fix, and submit a pull request for review.” The agent will pull the repository locally, create a branch, write the code using its internal engine, push it, and log the link back to your chat window. 
+
+SF AI Labs
+ +3
+Which of these three projects sparks your interest the most: the notification briefing agent, the browser web scraper, or the GitHub code bot? Let me know and we can start mapping out the actual file configurations!
+
+
+
+
+
+Wikipedia
+OpenClaw - Wikipedia
+OpenClaw is a free and open-source autonomous artificial intelligence agent that can execute tasks via large language models (LLMs...
+
+
+OpenClaw
+OpenClaw — Open-Source AI Assistant
+Organizes your inbox, sends emails, manages your calendar, checks you in for flights. All from WhatsApp, Telegram, or any chat app...
+
+
+
+YouTube
+·
+Metics Media
+The Ultimate Beginner's Guide to OpenClaw
+9 Mar 2026 — OpenClaw functions as a proactive AI assistant that works for the user, differentiating itself from reactive tools like ChatGPT or...
+
+56:42
+Skip to previous prompt
+Ask anything
+
+
+
+AI Mode response is ready
+Ask about 
